@@ -1,0 +1,136 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgb(76, 76, 76);
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+.containerBox {
+    margin: 0.5rem;
+    position: fixed;
+    width: 320px;
+    border-radius: 0.3rem;
+}
+.notify {
+    position: relative;
+    padding: 0.6rem;
+    color: #fff;
+    border-radius: 0.3rem;
+    text-align: right;
+    font-family: 'Vazir FD';
+    direction: rtl;
+
+
+}
+.notify:hover {
+    cursor: pointer;
+}
+.right-top {
+    right: 0;
+    top: 0;
+    animation: right-to-left 0.3s ease-out;
+
+}
+.right-bottom {
+    right: 0;
+    bottom: 0;
+    animation: right-to-left 0.3s ease-out;
+
+}
+
+.left-top {
+    left: 0;
+    top: 0;
+    animation: left-to-right 0.3s ease-out;
+
+}
+
+.left-bottom {
+    left: 0;
+    bottom: 0;
+    animation: left-to-right 0.3s ease-out;
+
+}
+.main {
+    padding: 0.5rem;
+    line-height: 2.5rem;
+    border:1px solid #eee;
+    border-radius: 0.3rem;
+}
+button {
+    padding: 0.3rem;
+    background-color: #fff;
+    font-weight: 800;
+    border-radius: 0.3rem;
+    border:0;
+    cursor: pointer;
+    margin: 0.3rem 0;
+}
+button:hover {
+    opacity: 0.9;
+}
+
+.success {
+    background-color: rgba(54, 168, 54, 0.758);
+}
+.success:hover {
+    background-color: rgba(19, 107, 19, 1);
+}
+
+.error {
+    background-color: rgba(107, 19, 31, 0.659);
+}
+.error:hover {
+    background-color: rgba(107, 19, 31, 1);
+}
+
+.warning {
+    background-color: rgba(107, 82, 19, 0.659);
+}
+.warning:hover {
+    background-color: rgba(107, 82, 19, 1);
+}
+
+
+.info {
+    background-color: rgba(19, 63, 107, 0.659);
+}
+.info:hover {
+    background-color: rgba(19, 63, 107, 1);
+}
+
+.hide {
+    transform: autoHide 2s ease-out;
+}
+
+@keyframes autoHide {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+
+}
+@keyframes right-to-left {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+
+}
+
+@keyframes left-to-right {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
